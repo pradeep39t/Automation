@@ -1,4 +1,4 @@
- function MyFunction(){
+ ;(function(){
     if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
       appReg();
       }
@@ -12,4 +12,4 @@
       document.getElementsByName('lastName')[0].value='Shaw';
       document.getElementById('button2');
       }
-    }MyFunction()
+    })(window)
