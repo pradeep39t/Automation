@@ -11,5 +11,5 @@ function myFunction(){
       document.getElementsByName('firstName')[0].value='Suzanne';
       document.getElementsByName('lastName')[0].value='Shaw';
       document.getElementById('button2');
-      }
+      };
     }myFunction()
