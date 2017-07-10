@@ -1,8 +1,4 @@
 function myFunction(){
-    if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
-      appReg();
-      }
- 
     var appReg = function(){
       document.getElementsByName('monthdateReceived')[0].value=today.getMonth()+1;
       document.getElementsByName('datedateReceived')[0].value=today.getDate();
@@ -12,4 +8,8 @@ function myFunction(){
       document.getElementsByName('lastName')[0].value='Shaw';
       document.getElementById('button2');
       };
+    if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
+      appReg();
+      }
+ 
     }myFunction()
