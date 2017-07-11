@@ -61,7 +61,7 @@ function myFunction(){
 		document.getElementById('actionButtonNext').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Individual Interviewed / Applicant - Details'){
-		document.getElementById('interviewMode').value='I';
+		document.getElementsByName('interviewMode')[0].value='I';
 		document.getElementById('cin').selectedIndex=1;
 		document.getElementById('hasBeenInterviewed').value='Y';
 		document.getElementById('actionButtonNext').click();
