@@ -43,6 +43,12 @@ function myFunction(){
 		document.getElementById('SNAP').checked=true;
 		document.getElementById('maFormCd').value='HCS-250';
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Expedited Screening'){
+		document.getElementById('expeditedCountableGrossIncome').value='200';
+		document.getElementById('expeditedCountableResources').value='200';
+		document.getElementById('expeditedRentMortgage').value='10';
+		document.getElementById('expeditedMigrant')='N';
+	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application - Summary'){
 		document.getElementById('workerAssignment').value='500238';
 		document.getElementById('button3').click();
