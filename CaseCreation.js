@@ -1,7 +1,6 @@
 function myFunction(){
 	var today=new Date();
-
-    if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
+	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
 		document.getElementsByName('monthdateReceived')[0].value=today.getMonth()+1;
 		document.getElementsByName('datedateReceived')[0].value=today.getDate();
 		document.getElementsByName('yeardateReceived')[0].value=today.getFullYear();
@@ -9,7 +8,7 @@ function myFunction(){
 		document.getElementsByName('firstName')[0].value='Suzanne';
 		document.getElementsByName('lastName')[0].value='Shaw';
 		document.getElementById('button2');      
-    }
+    	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application - Address'){
 		document.getElementsByName('streetNumber')[0].value='101';
 		document.getElementsByName('streetName2')[0].value='Richmond';
@@ -115,7 +114,12 @@ function myFunction(){
 		document.getElementById('rtcheck5').value='N';
 		document.getElementById('actionButtonNext').click();
 	}
-	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||(		document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||(document.getElementById('PRINTTITLE').innerHTML=='Primary Individual')||(document.getElementById('PRINTTITLE').innerHTML=='Program Request - Summary')||(	document.getElementById('PRINTTITLE').innerHTML=='Expense Questions')||(document.getElementById('PRINTTITLE').innerHTML=='Pathways/Tribal NEW Referral - Summary')){
+	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Primary Individual')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Program Request - Summary')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Expense Questions')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Pathways/Tribal NEW Referral - Summary')){
 		document.getElementById('actionButtonNext').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Wrapup - Run Eligibility'){
