@@ -39,8 +39,8 @@ function myFunction(){
 		document.getElementById('button4').click();
 	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Program'){
-		document.getElementById('cash').value='TF';
-		document.getElementById('SNAP').value='FS';
+		document.getElementById('cash').checked=true;
+		document.getElementById('SNAP').checked=true;
 		document.getElementById('maFormCd').value='HCS-250';
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application - Summary'){
