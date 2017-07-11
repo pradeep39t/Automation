@@ -68,6 +68,7 @@ function myFunction(){
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Education - Details'){
 		document.getElementById('highestLevel').value='KI';
+		document.getElementById('enrollmentStatus').value='NE';
 		document.getElementById('actionButtonNext').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Living Arrangement/Domicile - Details'){
@@ -79,12 +80,21 @@ function myFunction(){
 		document.getElementsByName('identityDocumentType')[0].value='PPT';
 		document.getElementsByName('identityVerification')[0].value='HC';
 		document.getElementsByName('identityDocumentViewed')[0].value='OR';
+		document.getElementById('monthidDocViewedDt').value=today.getMonth()+1;
+		document.getElementById('dateidDocViewedDt').value=today.getDate();
+		document.getElementById('yearidDocViewedDt').value=today.getFullYear();
 		document.getElementsByName('identityDocumentComments')[0].value='Test';
 		document.getElementsByName('citizenship')[0].value='US';
 		document.getElementsByName('citizenVerificationCode')[0].value='HC';
 		document.getElementsByName('citizenshipDocumentType')[0].value='UPP';
 		document.getElementsByName('citizenshipSVESStatus')[0].value='VE';
-		document.getElementsByName('citizenshipDocumentViewed')[0].value='ORIG';
+		document.getElementById('monthcitizenSvesDt').value=today.getMonth()+1;
+		document.getElementById('datecitizenSvesDt').value=today.getDate();
+		document.getElementById('yearcitizenSvesDt').value=today.getFullYear();		
+		document.getElementsByName('citizenshipDocumentViewed')[0].value='ORIG';	
+		document.getElementById('monthcitizenDocViewedDt').value=today.getMonth()+1;
+		document.getElementById('datecitizenDocViewedDt').value=today.getDate();
+		document.getElementById('yearcitizenDocViewedDt').value=today.getFullYear();		
 		document.getElementsByName('citizenshipDocumentComments')[0].value='Test';
 		document.getElementsByName('montanaResident')[0].value='Y';
 		document.getElementsByName('residentVerification')[0].value='HC';
@@ -92,11 +102,26 @@ function myFunction(){
 		document.getElementsByName('locationVerification')[0].value='HC';
 		document.getElementsByName('personMovedToMontana')[0].value='N';
 		document.getElementsByName('personRemainMontana')[0].value='Y';
-		document.getElementsByName('maritalStatus')[0].value='DI';
+		document.getElementsByName('maritalStatus')[0].value='MA';
+		document.getElementById('monthserviceOfferedDate').value=today.getMonth()+1;
+		document.getElementById('dateserviceOfferedDate').value=today.getDate();
+		document.getElementById('yearserviceOfferedDate').value=today.getFullYear();		
 		document.getElementsByName('serviceOffered')[0].value='AR';
 		document.getElementsByName('whenOffered')[0].value='AC';
 		document.getElementsByName('sendVrPacketClient')[0].value='Y';
+		document.getElementById('actionButtonNext').click()
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Household Individuals - Questions'){
+		document.getElementsByName('medDACPickleQuestion')[0].value='N';
+		document.getElementsByName('medQualWorkActivityQuestion')[0].value='N';
+		document.getElementsByName('acaAdultCoverageQuestion')[0].value='N';
+		document.getElementsByName('fosterCareQuestion')[0].value='N';
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Person Demographics - Conviction/Rehabilitation'){
+		document.getElementsByName('felonyDrugConviction')[0].value='N';
+		document.getElementById('actionButtonNext').click()
+	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Resource Questions'){
 		document.getElementById('rtcheck1').value='N';
 		document.getElementById('rtcheck5').value='N';
@@ -126,6 +151,9 @@ function myFunction(){
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Primary Individual')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Program Request - Summary')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Person Demographics - SSN Application/Armed Services')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Non Financial - Questions')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Compliance - Questions')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Expense Questions')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Pathways/Tribal NEW Referral - Summary')){
 		document.getElementById('actionButtonNext').click();
