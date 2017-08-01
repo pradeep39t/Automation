@@ -169,7 +169,7 @@ function myFunction(){
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
 		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();
 		document.getElementsByName('transferredSw')[0].value="N";		
-		document.getElementsByName('SUBMIT')[0].click();
+		document.getElementById('form2dynaLocalSubmitButton').click();
 		document.getElementById('actionButtonNext').click()
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Livestock - Details'){
