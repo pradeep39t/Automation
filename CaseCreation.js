@@ -131,7 +131,7 @@ function myFunction(){
 		document.getElementsByName('monthdeliveryDate')[0].value=today.getMonth()+1;
 		document.getElementsByName('datedeliveryDate')[0].value=today.getDate();
 		document.getElementsByName('yeardeliveryDate')[0].value=today.getFullYear();
-		document.getElementById('SUBMIT').click();
+		document.getElementsByName('SUBMIT')[0].click();
 		document.getElementById('actionButtonNext').click()
 	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Person Demographics - Conviction/Rehabilitation'){
@@ -169,7 +169,7 @@ function myFunction(){
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
 		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();
 		document.getElementsByName('transferredSw')[0].value="N";		
-		document.getElementById('SUBMIT').click();
+		document.getElementsByName('SUBMIT')[0].click();
 		document.getElementById('actionButtonNext').click()
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Livestock - Details'){
