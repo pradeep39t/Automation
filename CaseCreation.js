@@ -177,7 +177,8 @@ function myFunction(){
 		document.getElementById('cin').selectedIndex=1;
 		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
 		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
-		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();	
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('characteristic')[0].value='PET';
 		document.getElementsByName('verificationLivestock')[0].value='HC';
 		document.getElementsByName('jointOwnerSw')[0].value="N";
 		document.getElementsByName('fairMarketValue1')[0].value='50';
