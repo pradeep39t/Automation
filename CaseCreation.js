@@ -124,7 +124,7 @@ function myFunction(){
 		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
 		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();	
 		document.getElementsByName('monthpregnancyDueDate')[0].value=today.getMonth()+1;
-		document.getElementsByName('datepregnancyDueDate')[0].value=new Date(date.getFullYear(), date.getMonth() + 1, 0);
+		document.getElementsByName('datepregnancyDueDate')[0].value=new Date(today.getFullYear(), today.getMonth() + 1, 0);
 		document.getElementsByName('yearpregnancyDueDate')[0].value=today.getFullYear();			
 		document.getElementsByName('noFetuses')[0].value='1';
 		document.getElementsByName('pregnancyVerification')[0].value='HC';
