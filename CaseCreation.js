@@ -40,8 +40,8 @@ function myFunction(){
 	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Program'){
 		document.getElementById('maFormCd').value='HCS-250';
-		document.getElementById('cash').checked;
-		document.getElementById('SNAP').checked;		
+		//document.getElementById('cash').checked;
+		//document.getElementById('SNAP').checked;		
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Expedited Screening'){
 		document.getElementById('expeditedCountableGrossIncome').value='200';
@@ -118,6 +118,22 @@ function myFunction(){
 		document.getElementsByName('fosterCareQuestion')[0].value='N';
 		document.getElementById('actionButtonNext').click()
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Pregnancy - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
+		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();	
+		document.getElementsByName('monthpregnancyDueDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('datepregnancyDueDate')[0].value=new Date(date.getFullYear(), date.getMonth() + 1, 0);
+		document.getElementsByName('yearpregnancyDueDate')[0].value=today.getFullYear();			
+		document.getElementsByName('noFetuses')[0].value='1';
+		document.getElementsByName('pregnancyVerification')[0].value='HC';
+		document.getElementsByName('monthdeliveryDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('datedeliveryDate')[0].value=today.getDate();
+		document.getElementsByName('yeardeliveryDate')[0].value=today.getFullYear();
+		document.getElementById('SUBMIT').click();
+		document.getElementById('actionButtonNext').click()
+	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Person Demographics - Conviction/Rehabilitation'){
 		document.getElementsByName('felonyDrugConviction')[0].value='N';
 		document.getElementById('actionButtonNext').click()
@@ -137,6 +153,36 @@ function myFunction(){
 		document.getElementsByName('communitySpouseResourceMaintenanceAllowance')[0].value='N';
 		document.getElementById('actionButtonNext').click()
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Liquid Asset - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();	
+		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
+		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();			
+		document.getElementsByName('typeCd')[0].value='CAS';
+		document.getElementsByName('resourceVrfCd')[0].value='HC';
+		document.getElementsByName('characteristic_CH')[0].value="P";
+		document.getElementsByName('liquidAssetAmount')[0].value='30';
+		document.getElementsByName('monthstartdate')[0].value=today.getMonth()+1;
+		document.getElementsByName('datestartdate')[0].value=today.getDate();
+		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();
+		document.getElementsByName('transferredSw')[0].value="N";		
+		document.getElementById('SUBMIT').click();
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Livestock - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();	
+		document.getElementsByName('verificationLivestock')[0].value='HC';
+		document.getElementsByName('jointOwnerSw')[0].value="N";
+		document.getElementsByName('fairMarketValue1')[0].value='50';
+		document.getElementsByName('livestockTransferredSw')[0].value="N";		
+		document.getElementById('actionButtonNext').click()
+	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Income Questions'){
 		document.getElementById('incomeEDTestSw').value='N';
 		document.getElementById('rtcheck3').value='N';
