@@ -68,6 +68,7 @@ function myFunction(){
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Education - Details'){
 		document.getElementById('highestLevel').value='KI';
+		document.getElementById('medicaidStudentStatus').value='NAS';
 		document.getElementById('enrollmentStatus').value='NE';
 		document.getElementById('actionButtonNext').click();
 	}
