@@ -204,7 +204,7 @@ function myFunction(){
 		document.getElementsByName('payFrequency')[0].value="MO";
 		document.getElementsByName('incomeSource')[0].value='Source';
 		document.getElementsByName('amount')[0].value='10';
-		document.getElementsByName('verificationLivestock')[0].value='HC';		
+		document.getElementsByName('verification')[0].value='HC';		
 		document.getElementById('actionButtonNext').click()
 	}	
 	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
