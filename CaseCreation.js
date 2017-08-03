@@ -206,6 +206,23 @@ function myFunction(){
 		document.getElementsByName('amount')[0].value='10';
 		document.getElementsByName('verification')[0].value='HC';		
 		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Earned Income - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('type')[0].value='WA';
+		document.getElementsByName('payFrequency')[0].value="MO";
+		document.getElementsByName('incomeSource')[0].value='Source';		
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Earned Income- Payments'){
+		document.getElementsByName('monthfirstPayDateOnAfter')[0].value=today.getMonth()+1;
+		document.getElementsByName('datefirstPayDateOnAfter')[0].value=today.getDate();
+		document.getElementsByName('yearfirstPayDateOnAfter')[0].value=today.getFullYear();	
+		document.getElementById('buildWs').click()
+		document.getElementsByName('calcAvgBy')[0].value='CAP';				
 	}	
 	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
