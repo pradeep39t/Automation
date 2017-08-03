@@ -195,6 +195,18 @@ function myFunction(){
 		document.getElementById('rtcheck5').value='N';
 		document.getElementById('actionButtonNext').click();
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Unearned Income - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('unearnedIncomeTp')[0].value='SS';
+		document.getElementsByName('payFrequency')[0].value="MO";
+		document.getElementsByName('incomeSource')[0].value='Source';
+		document.getElementsByName('amount')[0].value='10';
+		document.getElementsByName('verificationLivestock')[0].value='HC';		
+		document.getElementById('actionButtonNext').click()
+	}	
 	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Primary Individual')||
