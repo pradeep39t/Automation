@@ -201,7 +201,7 @@ function myFunction(){
 		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
 		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
 		document.getElementsByName('unearnedIncomeTp')[0].value='SS';
-		document.getElementsByName('payFrequency')[0].value="MO";
+		document.getElementsByName('payFrequency')[0].value='MO';
 		document.getElementsByName('incomeSource')[0].value='Source';
 		document.getElementsByName('amount')[0].value='10';
 		document.getElementsByName('verification')[0].value='HC';		
@@ -213,7 +213,7 @@ function myFunction(){
 		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
 		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
 		document.getElementsByName('type')[0].value='WA';
-		document.getElementsByName('payFrequency')[0].value="MO";
+		document.getElementsByName('payFrequency')[0].value='MO';
 		document.getElementsByName('incomeSource')[0].value='Source';		
 		document.getElementById('actionButtonNext').click()
 	}
@@ -222,7 +222,13 @@ function myFunction(){
 		document.getElementsByName('datefirstPayDateOnAfter')[0].value=today.getDate();
 		document.getElementsByName('yearfirstPayDateOnAfter')[0].value=today.getFullYear();	
 		document.getElementById('buildWs').click()
-		document.getElementsByName('calcAvgBy')[0].value='CAP';				
+		document.getElementById('editImage0').click()
+		document.getElementsByName('actualAnticipated')[0].value='AC';
+		document.getElementsByName('wsAmount')[0].value='700';
+		document.getElementsByName('numberOfHoursWorked')[0].value='30';		
+		document.getElementsByName('verification')[0].value='HC';
+		document.getElementById('form2dynaLocalSubmitButton').click()
+		document.getElementById('actionButtonNext').click()		
 	}	
 	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
