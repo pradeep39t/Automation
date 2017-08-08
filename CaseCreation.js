@@ -258,5 +258,5 @@
 		document.getElementById('additionalProtectivePayee_0').value='N';
 		document.getElementById('actionButtonNext').click();
 	}
-	setTimeout(myFunction, 10000);
+	setTimeout(myFunction, 10);
 })()
