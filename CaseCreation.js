@@ -1,4 +1,4 @@
-function myFunction(){
+(function myFunction(){
 	var today=new Date();
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
 		document.getElementsByName('monthdateReceived')[0].value=today.getMonth()+1;
@@ -257,5 +257,6 @@ function myFunction(){
 		document.getElementById('issuanceMethod_0').value='EB';
 		document.getElementById('additionalProtectivePayee_0').value='N';
 		document.getElementById('actionButtonNext').click();
-	}	
-}myFunction()
+	}
+	setTimeout(myFunction, 10000);
+})()
