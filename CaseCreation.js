@@ -48,11 +48,11 @@ function myFunction(){
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Expedited Screening'){
 		document.getElementById('expeditedCountableGrossIncome').value='200';
-		setTimeout(function() {
+		//setTimeout(function() {
 		document.getElementById('expeditedCountableResources').value='200';
 		document.getElementById('expeditedRentMortgage').value='10';
-		document.getElementById('expeditedMigrant')='N';
-		}, 5000);
+		document.getElementById('expeditedMigrant').value='N';
+		//}, 10000);
 		document.getElementById('button3').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application - Summary'){
