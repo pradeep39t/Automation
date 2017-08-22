@@ -129,15 +129,15 @@ function myFunction(){
 		document.getElementsByName('absentParentUnknown')[0].value='N';
 		document.getElementsByName('lastName')[0].value='Lee';
 		document.getElementsByName('gender')[0].value='M';
-		document.getElementById('actionButtonNext').click()
+		document.getElementById('actionButtonNext').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Child Connection'){
 		document.getElementById('apChildName').selectedIndex=1;
 		document.getElementsByName('relationshipToAbsentParent')[0].value='F';
 		document.getElementsByName('paternitySW')[0].value='Y';
 		document.getElementsByName('indvWorkAbsenceReason')[0].value='SP';
-		document.getElementById('form2dynaLocalSubmitButton').click();
-		document.getElementById('actionButtonNext').click()
+		document.getElementById('form1dynaLocalSubmitButton').click();
+		document.getElementById('actionButtonNext').click();
 	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Pregnancy - Details'){
 		document.getElementById('cin').selectedIndex=1;
