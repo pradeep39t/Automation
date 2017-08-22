@@ -29,7 +29,7 @@ function myFunction(){
 		document.getElementById('ssn1ssn').value=Math.floor(Math.random() * 899+100);
 		document.getElementById('ssn2ssn').value=Math.floor(Math.random() * 99+10);
 		document.getElementById('ssn3ssn').value=Math.floor(Math.random() * 8999+1000);
-		if(document.getElementsByName('firstName')[0].value<>''){
+		if(document.getElementsByName('firstName')[0].value!=''){
 			document.getElementById('actionButtonNext').click();
 		}
 	}
