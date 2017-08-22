@@ -29,6 +29,9 @@ function myFunction(){
 		document.getElementById('ssn1ssn').value=Math.floor(Math.random() * 899+100);
 		document.getElementById('ssn2ssn').value=Math.floor(Math.random() * 99+10);
 		document.getElementById('ssn3ssn').value=Math.floor(Math.random() * 8999+1000);
+		if(document.getElementsByName('firstName')[0].value<>''){
+			document.getElementById('actionButtonNext').click();
+		}
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='File Clearance - Results'){
 		document.getElementById('viewAssociatedCases').value='N';
@@ -45,9 +48,12 @@ function myFunction(){
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Program - Expedited Screening'){
 		document.getElementById('expeditedCountableGrossIncome').value='200';
+		setTimeout(function() {
 		document.getElementById('expeditedCountableResources').value='200';
 		document.getElementById('expeditedRentMortgage').value='10';
 		document.getElementById('expeditedMigrant')='N';
+		}, 5000);
+		document.getElementById('button3').click();
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application - Summary'){
 		document.getElementById('workerAssignment').value='500238';
