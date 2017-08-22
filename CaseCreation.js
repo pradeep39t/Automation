@@ -125,6 +125,20 @@ function myFunction(){
 		document.getElementsByName('fosterCareQuestion')[0].value='N';
 		document.getElementById('actionButtonNext').click()
 	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Details'){
+		document.getElementsByName('absentParentUnknown')[0].value='N';
+		document.getElementsByName('lastName')[0].value='Lee';
+		document.getElementsByName('gender')[0].value='M';
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Child Connection'){
+		document.getElementById('apChildName').selectedIndex=1;
+		document.getElementsByName('relationshipToAbsentParent')[0].value='F';
+		document.getElementsByName('paternitySW')[0].value='Y';
+		document.getElementsByName('indvWorkAbsenceReason')[0].value='SP';
+		document.getElementById('form2dynaLocalSubmitButton').click();
+		document.getElementById('actionButtonNext').click()
+	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Pregnancy - Details'){
 		document.getElementById('cin').selectedIndex=1;
 		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
@@ -243,6 +257,10 @@ function myFunction(){
 	   (document.getElementById('PRINTTITLE').innerHTML=='Program Request - Summary')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Demographics - SSN Application/Armed Services')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Non Financial - Questions')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Additional Details')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Address Details')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Employment Details')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Child Support Order')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Compliance - Questions')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Expense Questions')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Pathways/Tribal NEW Referral - Summary')){
