@@ -183,6 +183,7 @@ function myFunction(){
 		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
 		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();			
 		document.getElementsByName('typeCd')[0].value='CAS';
+		setTimeout(function() {}, 10000);
 		document.getElementsByName('resourceVrfCd')[0].value='HC';
 		document.getElementsByName('jointlyOwnedSw')[0].value='N';
 		document.getElementsByName('characteristic_CH')[0].value='P';
