@@ -186,7 +186,7 @@ function myFunction(){
 		setTimeout(function() {}, 10000);
 		document.getElementsByName('resourceVrfCd')[0].value='HC';
 		document.getElementsByName('jointlyOwnedSw')[0].value='N';
-		document.getElementsByName('characteristic_default')[0].value='P';
+		document.getElementsByName('characteristic_CH')[0].value='P';
 		document.getElementsByName('liquidAssetAmount')[0].value='30';
 		document.getElementsByName('monthstartdate')[0].value=today.getMonth()+1;
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
