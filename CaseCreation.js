@@ -248,8 +248,84 @@ function myFunction(){
 		document.getElementsByName('wsAmount')[0].value='700';
 		document.getElementsByName('numberOfHoursWorked')[0].value='30';		
 		document.getElementsByName('verification')[0].value='HC';
-		document.getElementById('form2dynaLocalSubmitButton').click()
+		document.getElementById('form2dynaLocalSubmitButton').click();
+		document.getElementsByName('calcAvgBy')[0].value='CAP';
 		document.getElementById('actionButtonNext').click()		
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Self Employment - Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('businessStructure')[0].value='SP';
+		document.getElementsByName('responsibleWithholdSSTaxSw')[0].value='Y';
+		document.getElementsByName('earningIncomeDirectlySw')[0].value='N';			
+		document.getElementsByName('payingWithholdSSTaxSw')[0].value='Y';
+		document.getElementsByName('businessType')[0].value='FR';
+		document.getElementsByName('businessName')[0].value='Test';
+		document.getElementsByName('businessActivity')[0].value='Test';
+		document.getElementsByName('hoursPerWeekActiveParticipate')[0].value='30';
+		document.getElementsByName('incomeDocumentation')[0].value='BR';
+		document.getElementsByName('businessJointlyOwnedSw')[0].value='N';
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Self Employment - Business Records'){
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
+		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();
+		document.getElementsByName('amount')[0].value='100';
+		document.getElementsByName('monthmonthandYear')[0].value=today.getMonth()+1;
+		document.getElementsByName('yearmonthandYear')[0].value=today.getFullYear();			
+		document.getElementsByName('source')[0].value='Test';
+		document.getElementById('form2dynaLocalSubmitButton').click();
+		document.getElementsByName('selfEmpIncomeExpensesSw')[0].value='N';
+		document.getElementsByName('incomeExpenseVerification')[0].value='HC';
+		document.getElementsByName('numberOfMonthsRepresented')[0].value='1';
+		document.getElementsByName('monthsIntendedToCover')[0].value='1';
+		document.getElementsByName('numberOfMonthsAnnually')[0].value='1';
+		document.getElementById('actionButtonNext').click()
+	}	
+	if(document.getElementById('PRINTTITLE').innerHTML=='Additional MAGI Income/Expense Details'){
+		document.getElementById('cin').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('incomeExpenseType')[0].value='TFE';
+		document.getElementsByName('frequency')[0].value='MO';
+		document.getElementsByName('amountperFrequency')[0].value='100';			
+		document.getElementsByName('verification')[0].value='HC';
+		document.getElementById('actionButtonNext').click()
+	}	
+	if(document.getElementById('PRINTTITLE').innerHTML=='Shelter Expenses - Details'){
+		document.getElementById('personIncurringExpense').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
+		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();
+		document.getElementsByName('isHouseholdCurrentlyOccupying')[0].value='Y';			
+		document.getElementsByName('expenseTypeCd')[0].value='SURE';
+		document.getElementsByName('frequency')[0].value='MO';
+		document.getElementsByName('amountperFrequency')[0].value='100';
+		document.getElementsByName('verification')[0].value='HC';
+		document.getElementsByName('receiveRentSubsidy')[0].value='N';
+		document.getElementById('actionButtonNext').click()
+	}
+	if(document.getElementById('PRINTTITLE').innerHTML=='Utility Expenses - Details'){
+		document.getElementById('personIncurringExpense').selectedIndex=1;
+		document.getElementsByName('montheffectiveBeginDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateeffectiveBeginDate')[0].value=today.getDate();
+		document.getElementsByName('yeareffectiveBeginDate')[0].value=today.getFullYear();
+		document.getElementsByName('monthverfReceivedDate')[0].value=today.getMonth()+1;
+		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
+		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();
+		document.getElementsByName('heatingCoolingExpenses')[0].value='N';			
+		document.getElementsByName('utilityVerification')[0].value='HC';
+		document.getElementById('actionButtonNext').click()
 	}	
 	if((document.getElementById('PRINTTITLE').innerHTML=='Household Address - Summary')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Person Household Status')||
@@ -262,6 +338,9 @@ function myFunction(){
 	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Employment Details')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Non - Custodial Parent - Child Support Order')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Compliance - Questions')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Unearned Income - Average')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Earned Income - Average')||
+	   (document.getElementById('PRINTTITLE').innerHTML=='Self Employment Income - Average')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Expense Questions')||
 	   (document.getElementById('PRINTTITLE').innerHTML=='Pathways/Tribal NEW Referral - Summary')){
 		document.getElementById('actionButtonNext').click();
