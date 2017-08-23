@@ -119,7 +119,7 @@ function myFunction(){
 		document.getElementById('actionButtonNext').click()
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Household Individuals - Questions'){		
-		document.getElementsByName('currentlyPregnant')[0].value='N';
+		document.getElementsByName('currentlyPregnant')[0].value='Y';
 		document.getElementsByName('medDACPickleQuestion')[0].value='N';
 		document.getElementsByName('medQualWorkActivityQuestion')[0].value='N';
 		document.getElementsByName('acaAdultCoverageQuestion')[0].value='N';
