@@ -167,7 +167,7 @@ function myFunction(){
 		document.getElementById('lifeInsuranceResSw').value='N';
 		document.getElementById('rtcheck4').value='N';
 		document.getElementById('unusualValResSw').value='N';
-		document.getElementById('livestockResSw').value='N';
+		document.getElementById('livestockResSw').value='Y';
 		document.getElementById('mineralRightsResSw').value='N';
 		document.getElementById('rtcheck2').value='N';
 		document.getElementsByName('assetTransferSw')[0].value='N';
@@ -209,7 +209,7 @@ function myFunction(){
 	}	
 	if(document.getElementById('PRINTTITLE').innerHTML=='Income Questions'){
 		document.getElementById('incomeEDTestSw').value='N';
-		document.getElementById('rtcheck3').value='N';
+		document.getElementById('rtcheck3').value='Y';
 		document.getElementById('rtcheck1').value='N';
 		document.getElementsByName('isSelfEmployed')[0].value='N';
 		document.getElementsByName('additionalIncomeExpenses')[0].value='N';
