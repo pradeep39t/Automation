@@ -192,7 +192,7 @@ function myFunction(){
 		document.getElementsByName('monthstartdate')[0].value=today.getMonth()+1;
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
 		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();		
-		document.getElementById('form2dynaLocalSubmitButton').click();
+		document.getElementById('form2dynaLocalSubmitButton').FireEvent "onClick";
 		document.getElementsByName('transferredSw')[0].value='N';
 		document.getElementById('actionButtonNext').click()
 	}
