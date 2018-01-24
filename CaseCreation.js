@@ -184,6 +184,7 @@ function myFunction(){
 		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
 		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();			
 		document.getElementsByName('typeCd')[0].value='CAS';
+		document.getElementsByName('typeCd').fireevent "onchange";
 		setTimeout(function() {}, 10000);
 		document.getElementsByName('resourceVrfCd')[0].value='HC';
 		document.getElementsByName('jointlyOwnedSw')[0].value='N';
@@ -192,7 +193,7 @@ function myFunction(){
 		document.getElementsByName('monthstartdate')[0].value=today.getMonth()+1;
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
 		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();		
-		document.getElementById('form2dynaLocalSubmitButton').FireEvent "onClick";
+		document.getElementById('form2dynaLocalSubmitButton').click();
 		//document.getElementsByName('transferredSw')[0].value='N';
 		//document.getElementById('actionButtonNext').click()
 	}
