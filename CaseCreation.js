@@ -184,7 +184,7 @@ function myFunction(){
 		document.getElementsByName('dateverfReceivedDate')[0].value=today.getDate();
 		document.getElementsByName('yearverfReceivedDate')[0].value=today.getFullYear();			
 		document.getElementsByName('typeCd')[0].value='CAS';
-		document.getElementsByName('typeCd').fireevent "onchange";
+		//document.getElementsByName('typeCd').fireevent "onchange";
 		setTimeout(function() {}, 10000);
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Livestock - Details'){
