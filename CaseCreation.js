@@ -1,5 +1,5 @@
 function myFunction(){
-	var today=new Date();
+	var today=new Date()-1;
 	if(document.getElementById('PRINTTITLE').innerHTML=='Register Application'){
 		document.getElementsByName('monthdateReceived')[0].value=today.getMonth()+1;
 		document.getElementsByName('datedateReceived')[0].value=today.getDate();
@@ -193,8 +193,8 @@ function myFunction(){
 		document.getElementsByName('datestartdate')[0].value=today.getDate();
 		document.getElementsByName('yearstartdate')[0].value=today.getFullYear();		
 		document.getElementById('form2dynaLocalSubmitButton').FireEvent "onClick";
-		document.getElementsByName('transferredSw')[0].value='N';
-		document.getElementById('actionButtonNext').click()
+		//document.getElementsByName('transferredSw')[0].value='N';
+		//document.getElementById('actionButtonNext').click()
 	}
 	if(document.getElementById('PRINTTITLE').innerHTML=='Livestock - Details'){
 		document.getElementById('cin').selectedIndex=1;
